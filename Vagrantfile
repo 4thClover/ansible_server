@@ -72,4 +72,8 @@ Vagrant.configure("2") do |config|
     client.vm.hostname = "client"
   end
 
+  config.vm.define "server" do |server|
+    server.vm.hostname = "server"
+  end
+
 end
